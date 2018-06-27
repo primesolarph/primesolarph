@@ -1,0 +1,635 @@
+/*BLACK*/
+@font-face{
+    font-family: aileron-black;
+    src: url('Aileron-Black.otf');
+}
+/*BLACKITALIC*/
+@font-face{
+    font-family: aileron-blackitalic;
+    src: url('Aileron-BlackItalic.otf');
+}
+/*BOLD*/
+@font-face{
+    font-family: aileron-bold;
+    src: url('Aileron-Bold.otf');
+}
+/*BOLDITALIC*/
+@font-face{
+    font-family: aileron-bolditalic;
+    src: url('Aileron-BoldItalic.otf');
+}
+/*HEAVY*/
+@font-face{
+    font-family: aileron-heavy;
+    src: url('Aileron-Heavy.otf');
+}
+/*HEAVYITALIC*/
+@font-face{
+    font-family: aileron-heavyitalic;
+    src: url('Aileron-HeavyItalic.otf');
+}
+/*ITALIC*/
+@font-face{
+    font-family: aileron-italic;
+    src: url('Aileron-Italic.otf');
+}
+/*LIGHT*/
+@font-face{
+    font-family: aileron-light;
+    src: url('Aileron-Light.otf');
+}
+/*LIGHTITALIC*/
+@font-face{
+    font-family: aileron-lightitalic;
+    src: url('Aileron-LightItalic.otf');
+}
+/*REGULAR*/
+@font-face{
+    font-family: aileron-regular;
+    src: url('Aileron-Regular.otf');
+}
+/*SEMIBOLD*/
+@font-face{
+    font-family: aileron-semibold;
+    src: url('Aileron-Semibold.otf');
+}
+/*SEMIBOLDITALIC*/
+@font-face{
+    font-family: aileron-semibolditalic;
+    src: url('Aileron-SemiboldItalic.otf');
+}
+/*THIN*/
+@font-face{
+    font-family: aileron-thin;
+    src: url('Aileron-Thin.otf');
+}
+/*THINITALIC*/
+@font-face{
+    font-family: aileron-thinitalic;
+    src: url('Aileron-ThinItalic.otf');
+}
+/*ULTRALIGHT*/
+@font-face{
+    font-family: aileron-ultralight;
+    src: url('Aileron-Ultralight.otf');
+}
+/*ULTRALIGHTITALIC*/
+@font-face{
+    font-family: aileron-ultralightitalic;
+    src: url('Aileron-UltralightItalic.otf');
+}
+
+html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+/*    box-sizing: border-box;*/
+    overflow-x: hidden;
+}
+
+.header {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.header-logo-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 0px 0px 10px;
+}
+
+.header-logo-img {
+    height: 40px;
+}
+
+.header-logo-img:hover, .contact-logo-img:hover {
+    transform: rotate(360deg) scale(1.1);
+    transition-duration: 0.2s;
+}
+
+.header-logo-txt {
+    font-family: 'aileron-heavyitalic';
+    color: black;
+    font-size: 2.5em;
+    margin: 0px 0px 0px 5px;
+}
+
+.nav-link {
+    font-family: 'Raleway';
+    font-size: 1em;
+    line-height: 3em;
+    color: navy;
+}
+
+.nav-link:hover, .logo:hover, .intext-link:hover, .header-logo-txt:hover {
+    text-decoration: none;
+}
+
+.container-lrg {
+    max-width: 1080px;
+    margin: auto;
+    width: 100%;
+    display:flex;
+}
+
+.spread {
+    justify-content: space-between;
+}
+
+.page {
+    width: 100%;
+    height: 620px;
+    background-image: url(ps-files/ps-pics/page-img-3.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    
+/*    1 - 2 - 5 - 4 - 3*/
+/*    page-img-1 : bottom */
+/*    page-img-2 : top */
+/*    page-img-3 : center */
+/*    page-img-4 : center */
+/*    page-img-5 : bottom*/
+
+
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.outer {
+    height: 550px;
+    display: flex;
+    vertical-align: middle;
+    justify-content: center;
+}
+
+.heading-container {
+    font-family: 'Raleway';
+    color: whitesmoke;
+    background-color: rgb(0,0,0,.5);
+    padding: 20px;
+    max-width: 960px;
+    text-align: center;
+    
+    align-self: center;
+    
+/*    vertical-align: middle;*/
+/*    justify-content: center;*/
+    
+/*    margin: auto;*/
+/*    display: inline-block;*/
+}
+
+.heading {
+    font-size: 2.5em;
+    margin-bottom: 5px;
+}
+
+.subheading {
+    font-family: 'aileron-ultralight';
+    letter-spacing: 0.5px;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+#about {
+    margin-top: 0px;
+    padding: 50px 0px;
+    background: linear-gradient(to top, white, whitesmoke);
+    font-family: 'Raleway';
+}
+
+.about-header{
+    font-size: 1.9em;
+    line-height: 2em;
+}
+
+.about-p {
+    font-size: 1em;
+    letter-spacing: 1px;
+    line-height: 2em;
+    color: grey;
+}
+
+.abt-images {
+    margin-top:-15px;
+    text-align: center;
+}
+
+.abt-img1 {
+    height: 30px;
+    margin: 5px;
+}
+
+.abt-img2 {
+    height: 40px;
+    margin: 5px;
+}
+
+.abt-img3 {
+    height: 50px;
+    margin: 5px;
+}
+
+.intext-link {
+    font-family: 'aileron-semibold';
+    text-decoration: none;
+    color: #222;
+}
+
+#gridtie {
+    background: linear-gradient(to bottom, white, whitesmoke);
+    padding: 10px 0px 40px;
+}
+
+.gt-header {
+    font-family: 'Raleway';
+    font-size: 3em;
+}
+
+.gt-emoji {
+    
+}
+
+.gt-left {
+    color: lightgray;
+}
+
+.gt-right {
+    color: lightgray;
+}
+
+.gt-left:hover, .gt-right:hover {
+    color: limegreen;
+}
+
+.gt-left:active, .gt-right:active {
+    color: yellow;
+}
+
+
+.gt-color {
+    color: lime;
+}
+
+.gt-par {
+    font-family: 'Raleway';
+    font-size: 1em;
+    letter-spacing: 1px;
+    line-height: 2em;
+    color: grey;
+}
+
+.gt-list-icon {
+    height: 25px;
+    margin: 0px 10px;
+    vertical-align: middle;
+    display: inline;
+}
+
+.gt-list {
+/*    display: flex;*/
+    background-color: rgb(0,0,0,.75);
+    border-radius: 20px;
+    margin: 10px 0px;
+/*    line-height: 2em;*/
+    padding: 10px 0px 0px 0px;
+}
+.gt-list-text {
+    font-family: 'aileron-ultralight';
+    font-size: 1em;
+    letter-spacing: 1px;
+    line-height: 2em;
+    vertical-align: middle;
+    color: white;
+    display: inline;
+}
+
+.carousel-container {
+    border-radius: 20px;
+}
+
+#gt-packs {
+    padding-top: 20px;
+    padding-bottom: 50px;
+    
+    background: linear-gradient(to bottom, whitesmoke, #ddd);
+}
+
+.gt-packs-header {
+    font-family: 'Raleway';
+    font-size: 3em;
+/*    color: whitesmoke;*/
+}
+.gt-packs-disclaimer {
+    font-family: 'aileron-ultralightitalic';
+/*    color: whitesmoke;*/
+}
+
+.gt-card-title {
+    font-size: 1.5em;
+}
+
+.gt-card-par {
+    font-family: 'aileron-ultralightitalic';
+    letter-spacing: 0.5px;
+}
+
+.gt-card-list-bill {
+    font-family: 'aileron-ultralightitalic';
+    letter-spacing: 0.5px;
+}
+
+.gt-card-footer {
+    font-family: 'aileron-bolditalic';
+    font-size: 1.5em;
+    background-color: #343E4A;
+    color: whitesmoke;
+}
+
+.gt-img-container {
+    height: 564px;
+}
+
+.gt-list-header {
+    display: inline;
+    color: whitesmoke;
+    font-family: 'aileron-semibolditalic';
+    letter-spacing: 1px;
+    font-size: 1.1em;
+}
+
+.gt-list-txtbox {
+    padding: 0px 10px 10px;
+}
+
+#contact {
+/*    background-color: #697A8B;*/
+    
+    background-image: url(ps-files/ps-pics/solar1.jpg);
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    
+    padding: 70px 0px;
+    font-family: 'Raleway';
+    color: whitesmoke;
+}
+
+.contact-grey {
+    background-color: rgb(0,0,0,0.5);
+    padding: 20px 0px;
+    margin: 0px 20px;
+}
+
+.contact-writeup {
+    padding: 20px 20px 0px 0px;
+    text-align: right;
+}
+
+.contact-header {
+    font-size: 2em;
+}
+
+.contact-par {
+    font-family: 'aileron-ultralight';
+    font-size: 1em;
+    letter-spacing: 1px;
+    line-height: 1.6em;
+}
+
+.contact-box {
+/*    text-align: center;*/
+}
+
+.contact-logo-box {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.contact-logo-img {
+    height: 50px;
+    vertical-align: center;
+}
+
+.contact-logo-txt {
+    margin: 0px 0px 0px 5px;
+}
+
+.contact-logo-top {
+    font-family: 'aileron-heavyitalic';
+    font-size: 3em;
+    margin: -10px 0px;
+}
+
+.contact-logo-bottom {
+    font-family: 'aileron-ultralight';
+    font-size: 1.2em;
+    margin: -20px 0px 0px 0px;
+}
+
+.contact-details {
+    font-family: 'aileron-ultralight';
+    letter-spacing: 0.5px;
+}
+
+.contact-fblink {
+    color: #3b5998;
+    font-weight: 700;
+}
+
+.contact-fblink:hover {
+    color: white;
+	background-color: #3b5998;
+	border: 3px solid #3b5998;
+    text-decoration: none;
+}
+
+.contact-email {
+    color:whitesmoke;
+}
+
+.footer {
+    height: 50px;
+    background-color: #343E4A;
+    padding-top: 5px;
+    
+    font-family: 'aileron-ultralight';
+    color: whitesmoke;
+    font-size: 1em;
+}
+
+@media (max-width: 1200px){
+    .gt-header {
+        font-size: 2.5em;
+    }
+    .gt-packs-header {
+        font-size: 2.5em;
+    }
+    .gt-img-container {
+        height: 620px;
+    }
+}
+
+@media (max-width: 992px){
+    .contact-logo-box {
+        justify-content: center;
+    }
+    .contact-writeup {
+        padding: 0px 20px 20px;
+        text-align: center;
+    }
+    .contact-box {
+        text-align: center;
+    }
+    .gt-card-title {
+        font-size: 1em;
+    }
+    .gt-card-par {
+        font-size: 0.9em;
+    }
+    .gt-card-list {
+        font-size: 0.8em;
+    }
+    .gt-card-list-bill {
+        font-size: 0.8em;
+    }
+    .gt-card-footer {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 768px){
+    .header-logo-img {
+        height: 30px;
+        margin-top: -5px;
+    }
+    .header-logo-txt {
+        font-size: 2em;
+        margin-bottom: 5px;
+    }
+    .heading {
+        font-size: 2em;
+    }
+    #about {
+        padding: 20px 0px;
+    }
+    .abt-images {
+        padding-bottom: 15px;
+    }
+    .gt-header {
+        font-size: 2em;
+    }
+    .gt-packs-header {
+        font-size: 2.1em;
+    }
+    .contact-grey {
+        margin: 0px;
+    }
+    .contact-logo-top {
+        margin-top: -10px;
+    }
+}
+
+@media (max-width: 590px){
+    .header-logo-txt {
+        font-size: 1.8em;
+    }
+    .nav-link {
+        font-size: 0.8em;
+        margin: -5px;
+    }
+    .page {
+        height: 500px;
+    }
+    .outer {
+        height: 400px;
+    }
+    .heading-container {
+/*        margin-top: 70px;*/
+    }
+    .subheading {
+        font-size: 0.8em;
+    }
+    .about-header {
+        font-size: 1.5em;
+    }
+    .about-p {
+        font-size: 0.8em;
+    }
+    .gt-packs-disclaimer {
+        font-size: 0.8em;
+    }
+    .contact-logo-img {
+        height: 40px;
+    }
+    .contact-logo-top {
+        font-size: 2.5em;
+    }
+    .contact-logo-bottom {
+        margin: -15px 0px 0px 0px;
+        font-size: 1.05em;
+    }
+    .contact-header {
+        font-size: 1.8em;
+    }
+    .contact-par {
+        font-size: 0.8em;
+    }
+    .contact-details {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 575px){
+    .gt-img {
+/*        width: 370px;*/
+    }
+    .gt-packs-header {
+        font-size: 1.5em;
+    }
+    .gt-card-title {
+        font-size: 1.5em;
+    }
+    .gt-card-par {
+        font-size: 1em;
+    }
+    .gt-card-list {
+        font-size: 1em;
+    }
+    .gt-card-list-bill {
+        font-size: 1em;
+    }
+    .gt-card-footer {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 500px){
+    .spread {
+        display: table;
+        align-content: flex-start
+    }
+    .header-logo-box {
+        display: inherit;
+        align-content: center;
+        justify-content:center;
+        margin: auto;
+    }
+    .nav {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        margin: auto;
+        font-size: 1.2em;
+    }
+}
+
+.i-logo:hover {
+/*    color:navy;*/
+}
+
+
